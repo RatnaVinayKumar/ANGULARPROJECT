@@ -1,0 +1,47 @@
+div{
+    text-align: center;
+    width: 50%;
+    background-color: lightskyblue;
+    border: 1px solid violet;
+    margin: left;
+    border-radius: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    font-style: italic;
+    
+
+}
+
+
+li:hover
+{
+    background-color: hotpink;
+    color: white;
+    border-radius: 10px;
+}
+li{
+    padding: 15px;
+}
+.c1{
+    background-color: rgb(120, 120, 221);
+    padding: 10px;
+
+}
+button:hover{
+    background-color: green;
+    color: white;
+}
+h2{
+    color: brown;
+}
+
+.c2{
+    border: green;
+    padding: 10px;
+    border-spacing: 5px;
+}

@@ -1,0 +1,36 @@
+<p>city-list works!</p>
+<div>
+    <label>Enter City Name</label>
+    <input #cityTxtFld>
+    <button (click)="AddLast(cityTxtFld.value)">Add Last</button>
+    <button (click)="AddFirst(cityTxtFld.value)">Add First</button>
+    <button (click)="DeleteFirst()">Delete First</button>
+    <button (click)="DeleteLast()">Delete Last</button>
+</div>
+<div *ngIf="toggleList">
+    <h2>List of cities</h2>
+<ol [class.r2]="hasTableClass">
+    <li *ngFor="let city of cities" [title]="city + ' details'">{{city}}</li>
+
+</ol>
+</div>
+
+<div  *ngIf="toggleList">
+    <table [class.r1]="hasTableClass">
+        <tr (click)="onDelete(city)" *ngFor="let city of cities" [title]="city + ' details'">
+            <td>{{city}}</td>
+        </tr>
+    </table>
+</div>
+
+<div *ngIf="toggleList">
+    <select [class]="myclasses">
+        <option *ngFor="let city of cities" value="city">{{city}}</option>
+    </select>
+</div>
+
+<button class="c1" (click)="onShow()">Show list</button>
+<button class="c1" (click)="onHide()">Hide list</button>
+<button class="c1"  (click)="onToggle()">{{toggleList?'Hide':'Show'}}</button>
+<button (click)="onChange()">Change</button>
+

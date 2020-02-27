@@ -1,0 +1,15 @@
+<p>country-list works!</p>
+<div>
+    <label>Enter Country Name</label>
+    <input #countryTxtFld>
+    <button (click)="onSave(countryTxtFld.value)">Save</button>
+</div>
+<div *ngIf="toggleList">
+    <h2>List of countries</h2>
+<ul >
+    <li *ngFor="let country of countries">{{country}}</li>
+
+</ul>
+</div>
+
+<button class="c1"  (click)="onToggle()">{{toggleList?'Hide':'Show'}}</button>

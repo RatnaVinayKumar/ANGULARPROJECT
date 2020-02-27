@@ -1,0 +1,13 @@
+<p>calculator works!</p>
+<div>
+<button #b1 value="1"  (click)="perform(b1.value)">1</button><button>2</button><button>3</button><br>
+<button>4</button><button>5</button><button>6</button><br>
+<button>7</button><button>8</button><button>9</button><br>
+<button>0</button><button>+</button><button>-</button>
+<button>/</button><button>*</button>
+</div>
+
+<label>MathExpression</label>
+<input #txt value="{{answer}}">
+<button>Submit</button>
+<h2 *ngIf="answer"> ans={{answer}}</h2>

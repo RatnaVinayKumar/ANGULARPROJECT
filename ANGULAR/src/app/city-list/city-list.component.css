@@ -1,0 +1,60 @@
+div{
+    text-align: center;
+    width: 50%;
+    background-color: lightskyblue;
+    border: 1px solid violet;
+    margin: left;
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ol{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    font-style: italic;
+}
+
+
+li:hover
+{
+    background-color: hotpink;
+    color: white;
+    border-radius: 10px;
+}
+li{
+    padding: 15px;
+}
+.c1{
+    background-color: rgb(120, 120, 221);
+    padding: 10px;
+
+}
+
+
+
+button:hover{
+    background-color: green;
+    color: white;
+}
+h2{
+    color: brown;
+}
+table{
+    border:2px solid black;   
+}
+td{
+    border: 2px solid black;
+    padding: 10px;
+}
+select{
+    margin-left: auto;
+}
+.r1{
+    background-color: greenyellow;
+    color: crimson;
+}
+.r2{
+background-color: crimson;
+color: greenyellow;
+}
